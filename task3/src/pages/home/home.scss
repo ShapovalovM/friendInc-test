@@ -1,0 +1,26 @@
+page-home {
+
+  $background: #ff7d83;
+  $text: white;
+
+
+  .toolbar-background, .content {
+    background-color: $background;
+  }
+  .toolbar-title, .button-inner, .text {
+    color: $text;
+  }
+  .toolbar::after {
+    background-image: none;
+  }
+
+  .text {
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+  .text > span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

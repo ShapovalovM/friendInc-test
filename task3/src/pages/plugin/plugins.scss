@@ -1,0 +1,38 @@
+page-plugins {
+
+  $background: #9e0000;
+  $text: white;
+
+
+  .toolbar-background {
+    background-color: $background;
+  }
+  .toolbar-title, .button-inner, .text {
+    color: $text;
+  }
+  .white-bg{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .my-item {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    width: calc(100%/3 - 2vw - 0.2vw);
+    border: 0.1vw solid gray;
+    overflow: hidden;
+  }
+  .my-item > img {
+    padding-bottom: 1vw;
+    padding-top: 5vw;
+    display: block;
+    margin: 0 auto;
+  }
+  .my-item > p {
+    font-size: 3vw;
+    padding: 1vw;
+    margin-top: auto;
+    vert-align: middle;
+  }
+}

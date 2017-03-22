@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Plugins</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="white-bg" padding>
+    <div class="my-item" *ngFor="let item of items">
+      <img [src]="item.image" alt="{{item.title}}"/>
+      <p text-center>{{item.title}}</p>
+    </div>
+  </div>
+</ion-content>
